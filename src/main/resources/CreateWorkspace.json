@@ -1,0 +1,7 @@
+{
+  "workspaces": {
+    "name": "WS-N-01",
+    "type": "personal",
+    "description": "test WS"
+  }
+}
