@@ -1,16 +1,16 @@
 package spotify;
 
+import framework.api.utils.ApiUtils;
+import framework.FakerUtils;
+import framework.api.utils.StatusCode;
 import io.qameta.allure.*;
 import io.qameta.allure.testng.AllureTestNg;
 import io.restassured.response.Response;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import spotify.api.ApiUtils;
-import spotify.api.StatusCode;
-import spotify.utils.FakerUtils;
 
-import static Framework.Contracts.PostMan.getCreatePlayListJson;
-import static Framework.JsonPathOperation.set;
+import static framework.api.Contracts.Spotify.getCreatePlayListJson;
+import static framework.api.utils.JsonPathOperation.set;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
